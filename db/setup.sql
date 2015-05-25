@@ -14,3 +14,12 @@ CREATE TABLE `bixsecurestorage`.`user` (
   
 INSERT INTO `bixsecurestorage`.`user` (`id`, `name`, `address`) VALUES ('100', 'Pradeep', 'Sollentuna');
 INSERT INTO `bixsecurestorage`.`user` (`id`, `name`) VALUES ('200', 'Yohan');
+
+
+CREATE TABLE `bixsecurestorage`.`file` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `desc` VARCHAR(45) NULL,
+  `credate` DATETIME NULL,
+  `content` BLOB NULL,
+  PRIMARY KEY (`id`));
